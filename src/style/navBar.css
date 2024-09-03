@@ -1,0 +1,63 @@
+/* SECTION: nav and stickly class at the same time */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  color: black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.nav.sticky {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+
+.nav__logo {
+  height: 4.5rem;
+  transition: all 0.3s;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border: 2px solid red;
+}
+
+.nav__item {
+  margin-left: 4rem;
+  border: 2px solid blue;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}
+
+.nav__link:hover {
+  background-color: lightgreen;
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+}
+
+/* SECTION: Contact button styling */
+.btn--show-modal {
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  background-color: var(--color-primary);
+  color: #222;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+}

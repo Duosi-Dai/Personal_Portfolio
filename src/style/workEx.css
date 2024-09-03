@@ -1,0 +1,73 @@
+/* SECTION: workExs */
+.workExs {
+  max-width: 100rem;
+  margin: 5rem auto 10rem auto;
+  background-color: #fff;
+  height: 50rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 5px solid blue;
+}
+
+/* SECTION: WorkExs tab container */
+.workExs__tab-container {
+  display: flex;
+  height: 100%;
+  border: 5px solid black;
+}
+
+.workExs__tab-container > div:first-child {
+  width: 20rem; /* Fixed width for the tab section */
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-left: 10rem;
+  border: 5px solid black;
+}
+
+.workExs__tab-container > div:last-child {
+  flex-grow: 1; /* Content takes the remaining space */
+  padding: 2.5rem 7rem 6.5rem 7rem;
+  overflow-y: auto; /* Allows scrolling if content is too long */
+  border: 5px solid red;
+}
+
+/* SECTION: Work Experience Tab */
+.workExs__tab {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  width: 5rem; /* Full width */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.workExs__tab:hover {
+  background-color: var(--color-secondary-darker);
+}
+
+.workExs__tab--active {
+  background-color: #9be15d;
+  transform: translateX(-66%);
+}
+
+/* SECTION: Work Experience Content */
+.workExs__header {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  border: 5px solid red;
+}
+
+.workExs__content {
+  display: none;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.workExs__content--active {
+  display: block;
+  background-color: #ddd;
+  border: 5px solid black;
+}
