@@ -15,7 +15,7 @@ const Header = () => {
           </h1>
           <h4>Self-introduction Pitch</h4>
           <button className="btn--text">More about Me</button>
-          <div className="contactIcon">
+          <div className="social-link">
             <a href="https://github.com/Duosi-Dai">
               <FaGithub className="icon" />
             </a>

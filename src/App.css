@@ -83,7 +83,7 @@ body {
 }
 
 .btn:hover {
-  background-color: var(--color-primary-darker);
+  background-color: var(--color-secondary);
 }
 
 .btn--text {
@@ -102,4 +102,11 @@ body {
 
 p {
   color: #666;
+}
+
+.social-link {
+  font-size: 3rem;
+  border: 5px solid red;
+  display: flex;
+  gap: 10px;
 }

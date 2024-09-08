@@ -1,14 +1,6 @@
-.about_profile {
-  width: 40%;
-}
-.social-link {
-  display: flex;
-}
-
 .about {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   max-width: 100rem;
   height: 50rem;
   margin: 0 auto;
@@ -16,10 +8,56 @@
   overflow: hidden;
   border: 5px solid black;
 }
+
 .about_left {
+  max-width: 50rem;
   justify-content: start;
+  border: 5px solid blue;
 }
+
+.about_profile {
+  width: 40%;
+}
+.social-link {
+  display: flex;
+}
+
 .about_right {
-  justify-content: end;
-  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid red;
+}
+
+.about_btn {
+  border: 2px solid black;
+}
+
+.active {
+  background-color: #9be15d;
+}
+
+.about_content {
+  border: 6px solid blue;
+  margin-top: 5rem;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-auto-rows: auto;
+  height: auto;
+}
+.skillsGrid img {
+  height: 75px;
+  width: 75px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
