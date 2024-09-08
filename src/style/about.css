@@ -20,9 +20,14 @@
 }
 .social-link {
   display: flex;
+  width: fit-content;
+}
+.resume {
+  width: fit-content;
 }
 
 .about_right {
+  width: 60rem;
   display: flex;
   flex-direction: column;
   border: 5px solid red;
@@ -43,7 +48,7 @@
 
 .skillsGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   grid-auto-rows: auto;
   height: auto;
