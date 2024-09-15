@@ -1,48 +1,40 @@
-import { useState } from "react";
-import WorkExTab from "../components/WorkExTab";
-import WorkExContent from "../components/WorkExContent";
+import { useState } from 'react';
+import { WorkExContent } from '../components/WorkExContent';
 
 const WorkExs = () => {
-  const workExData = [
-    {
-      id: "1",
-      period: "1",
-      title: "UX designer",
-      description: "discriptionaaaaa",
-    },
-    {
-      id: "2",
-      period: "2",
-      title: "Teaching Assistant",
-      description: "discriptionaaaaa",
-    },
-    {
-      id: "3",
-      period: "3",
-      title: "Frontend Developer",
-      description: "discriptionaaaaa",
-    },
-  ];
-
+  // State to track which tab is active
   const [activeTab, setActiveTab] = useState(0);
+
+  // Define the job titles as tabs
+  const jobTitles = [ 'Frontend Developer','UX Designer','Teaching Assistant'];
 
   return (
     <>
-      <section className="section" id="experience">
-        <div className="section__title">
-          <h3 className="section__header">WORK EXPERIENCE</h3>
+    <div className="section__title section__title--projects">
+          <h3 className="section__header">Work Experience</h3>
         </div>
-        <div className="workExs">
-          <div className="workExs__tab-container">
-            <WorkExTab
-              workExData={workExData}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
-            <WorkExContent workExData={workExData} activeTab={activeTab} />
-          </div>
+    <section className="workExs">
+       
+      <div className="workExs__tab-container">
+        <div>
+          {jobTitles.map((title, index) => (
+            <div
+              key={index}
+              className={`workExs__tab ${activeTab === index ? 'workExs__tab--active' : ''}`}
+              onClick={() => setActiveTab(index)}
+            >
+              {title}
+            </div>
+          ))}
         </div>
-      </section>
+        
+        <div>
+          {activeTab === 0 && <WorkExContent jobIndex={0} />}
+          {activeTab === 1 && <WorkExContent jobIndex={1} />}
+          {activeTab === 2 && <WorkExContent jobIndex={2} />}
+        </div>
+      </div>
+    </section>
     </>
   );
 };

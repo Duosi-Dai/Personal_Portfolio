@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ProjectSlide from "../components/ProjectSlide";
 import profile from "../assets/profile.png";
-import Skills from "../components/skills";
+
 
 const Projects = () => {
   const data = [
@@ -55,8 +55,6 @@ const Projects = () => {
         <div className="section__title section__title--projects">
           <h3 className="section__header">Projects</h3>
         </div>
-
-        <Skills />
 
         <div className="slider">
           <ProjectSlide projectData={data} currentSlide={currentSlide} />

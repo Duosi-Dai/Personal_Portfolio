@@ -1,7 +1,7 @@
 import { useState } from "react";
 import profile from "../assets/profile.png";
 import EducationTimeline from "../components/EducationTimeline";
-import Skills from "../components/skills";
+import Skills from "../components/Skills";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 const About = () => {
   const [content, setContent] = useState(0);
