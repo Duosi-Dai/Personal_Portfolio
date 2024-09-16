@@ -4,15 +4,17 @@
   justify-content: space-between;
   align-items: center;
   background-color: whitesmoke;
-  color: black;
   padding: 1rem;
   margin-bottom: 1rem;
+  color: #0f1035;
 }
 .nav.sticky {
   top: 0;
   width: 100%;
   position: fixed;
   z-index: 9999;
+  background-color: #8eaccd;
+  color: #0f1035;
 }
 
 .nav__logo {
@@ -24,12 +26,10 @@
   display: flex;
   align-items: center;
   list-style: none;
-  border: 2px solid red;
 }
 
 .nav__item {
   margin-left: 4rem;
-  border: 2px solid blue;
 }
 
 .nav__link:link,
@@ -43,7 +43,7 @@
 }
 
 .nav__link:hover {
-  background-color: lightgreen;
+  background-color: #d2e0fb;
   padding: 0.8rem 2.5rem;
   border-radius: 3rem;
 }
@@ -52,7 +52,7 @@
 .btn--show-modal {
   padding: 0.8rem 2.5rem;
   border-radius: 3rem;
-  background-color: var(--color-primary);
+  background-color: #d2e0fb;
   color: #222;
   font-size: 1.7rem;
   font-weight: 400;

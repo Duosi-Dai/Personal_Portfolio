@@ -6,49 +6,68 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  border: 5px solid black;
 }
 
 .about_left {
-  max-width: 50rem;
-  justify-content: start;
-  border: 5px solid blue;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .about_profile {
-  width: 40%;
+  width: 60%;
 }
-.social-link {
+
+.social-links {
   display: flex;
-  width: fit-content;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
+
+.icon {
+  font-size: 3rem;
+}
+
 .resume {
-  width: fit-content;
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .about_right {
   width: 60rem;
   display: flex;
   flex-direction: column;
-  border: 5px solid red;
+  align-items: center;
 }
 
 .about_btn {
-  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
 }
 
 .active {
-  background-color: #9be15d;
+  background-color: #d2e0fb;
 }
 
 .about_content {
-  border: 6px solid blue;
-  margin-top: 5rem;
+  background-color: #d2e0fb;
+  margin-top: 2rem;
+  padding: 12%;
+  border-radius: 20%;
 }
 
 .skillsGrid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   grid-auto-rows: auto;
   height: auto;

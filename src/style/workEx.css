@@ -5,33 +5,28 @@
   background-color: #fff;
   height: 50rem;
   position: relative;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
-  border: 5px solid blue;
+  border-radius: 2%;
 }
 
 /* SECTION: WorkExs tab container */
 .workExs__tab-container {
   display: flex;
   height: 100%;
-  border: 5px solid black;
 }
 
 .workExs__tab-container > div:first-child {
-  width: 20rem; /* Fixed width for the tab section */
+  width: 20rem;
   display: flex;
   flex-direction: column;
   margin: auto;
   padding-left: 10rem;
-  border: 5px solid black;
 }
 
 .workExs__tab-container > div:last-child {
-  flex-grow: 1; /* Content takes the remaining space */
+  flex-grow: 1;
   padding: 2.5rem 7rem 6.5rem 7rem;
-  overflow-y: auto; /* Allows scrolling if content is too long */
-  border: 5px solid red;
+  overflow-y: auto;
 }
 
 /* SECTION: Work Experience Tab */
@@ -39,35 +34,48 @@
   margin-bottom: 1.5rem;
   padding: 1rem;
   text-align: center;
-  width: 5rem; /* Full width */
-  transition: background-color 0.3s ease; /* Smooth background transition */
-}
-
-.workExs__tab:hover {
-  background-color: var(--color-secondary-darker);
+  transition: background-color 0.3s ease;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #365486;
+  background-color: #8eaccd;
+  border-radius: 20%;
 }
 
 .workExs__tab--active {
-  background-color: #9be15d;
+  background-color: #d2e0fb;
   transform: translateX(-66%);
+  color: #365486;
+}
+
+.workExs__tab:hover {
+  background-color: #dcf2f1;
 }
 
 /* SECTION: Work Experience Content */
 .workExs__header {
-  font-size: 2.25rem;
-  font-weight: 500;
+  color: #365486;
+  font-size: 2.5rem;
+  font-weight: bold;
   margin-bottom: 1rem;
-  border: 5px solid red;
-}
-
-.workExs__content {
-  display: none;
-  font-size: 1.7rem;
+  font-style: italic;
   text-align: center;
 }
 
-.workExs__content--active {
-  display: block;
-  background-color: #ddd;
-  border: 5px solid black;
+.workExs__content {
+  margin-top: 2rem;
+  background-color: #d2e0fb;
+  font-size: 2rem;
+  font-style: italic;
+  border-radius: 15%;
+}
+
+.skillList {
+  font-size: 1.7rem;
+  margin-left: 10rem;
+  font-style: italic;
+}
+
+p {
+  margin-left: 3rem;
 }

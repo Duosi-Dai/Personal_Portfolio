@@ -19,7 +19,12 @@ const workExperiences: WorkExperience[] = [
     companyName: 'Oolong Tea House Sweden',
     duration: 'Feb 2020 - Apr 2021 (1yr 3 mos)',
     responsibilities: ['Store management', 'UX design for Oolong new app'],
-    technologies: ['UX design', 'Leadership', 'Social Media Advertising', 'Quick learning'],
+    technologies: [
+      'UX design',
+      'Leadership',
+      'Social Media Advertising',
+      'Quick learning',
+    ],
   },
   {
     jobTitle: 'Teaching Assistant',
@@ -27,32 +32,43 @@ const workExperiences: WorkExperience[] = [
     duration: 'Jan 2019 - May 2019 (5 mos)',
     responsibilities: ['Chinese teaching', 'Class mentor'],
     technologies: ['Teaching', 'Coaching', 'Leadership'],
-  }
+  },
 ];
 
 interface WorkExContentProps {
   jobIndex: number;
 }
 
-const WorkExContent = ({ jobIndex }:WorkExContentProps) => {
+const WorkExContent = ({ jobIndex }: WorkExContentProps) => {
   const experience = workExperiences[jobIndex];
 
   return (
-    
-    <div className="workExs__content--active">
+    <div className="workExs__content">
       <h2 className="workExs__header">{experience.jobTitle}</h2>
-      <p><strong>Company:</strong> {experience.companyName}</p>
-      <p><strong>Duration:</strong> {experience.duration}</p>
-      <p><strong>Responsibilities:</strong></p>
+      <p>
+        <strong>Company:</strong> {experience.companyName}
+      </p>
+      <p>
+        <strong>Duration:</strong> {experience.duration}
+      </p>
+      <p>
+        <strong>Responsibilities:</strong>
+      </p>
       <ul>
         {experience.responsibilities.map((responsibility, i) => (
-          <li key={i}>{responsibility}</li>
+          <li className="skillList" key={i}>
+            {responsibility}
+          </li>
         ))}
       </ul>
-      <p><strong>Technologies/Skills Used:</strong></p>
+      <p>
+        <strong>Technologies/Skills Used:</strong>
+      </p>
       <ul>
         {experience.technologies.map((tech, i) => (
-          <li key={i}>{tech}</li>
+          <li className="skillList" key={i}>
+            {tech}
+          </li>
         ))}
       </ul>
     </div>

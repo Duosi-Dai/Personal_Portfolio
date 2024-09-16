@@ -1,5 +1,5 @@
-import profile from "../assets/profile.png";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import profile from '../assets/profile.png';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -11,10 +11,13 @@ const Header = () => {
             <br />
             I'm <span className="highlight">Duosi Dai</span>
             <br />
-            {/* <span className="highlight">Career field</span> */}
           </h1>
-          <h4>Self-introduction Pitch</h4>
-          <button className="btn--text">More about Me</button>
+          <h4>
+            I am a passionate developer with a focus on frontend development and
+            UI/UX design.
+          </h4>
+          <button className="btn">More about Me</button>
+
           <div className="social-link">
             <a href="https://github.com/Duosi-Dai">
               <FaGithub className="icon" />

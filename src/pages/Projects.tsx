@@ -58,8 +58,8 @@ const Projects = () => {
 
   return (
     <>
-      <section className="section" id="projects">
-        <div className="section__title section__title--projects">
+      <section className="section section_color" id="projects">
+        <div className="section__title">
           <h3 className="section__header">Projects</h3>
         </div>
 
