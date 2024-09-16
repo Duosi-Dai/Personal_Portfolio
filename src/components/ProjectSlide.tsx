@@ -68,7 +68,7 @@ const ProjectSlide = ({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Blog
+                Website
               </a>
             )}
           </div>

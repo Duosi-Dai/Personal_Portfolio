@@ -5,6 +5,7 @@ import bThesis from '../assets/BachelorThesis.png';
 import bookKeeper from '../assets/bookKeeper.png';
 import rpgGame from '../assets/RPGgame.png';
 import simFluid from '../assets/SimFluid.png';
+import portfolio from '../assets/personalPorfolio.png';
 
 const Projects = () => {
   const projects = [
@@ -15,6 +16,14 @@ const Projects = () => {
       date: 'Oct 2023 - Jan 2024',
       videoLink: 'https://www.youtube.com/watch?v=FJzWE-XxcVw',
       img: emoCanvas,
+    },
+    {
+      title: 'Static Web: Personal Portfolio',
+      description:
+        'This personal portfolio is a personal project and is created using React + TypeScript + Vite.',
+      date: 'Sep 2024 - Present',
+      blogLink: 'https://duosi-dai.github.io/Personal_Portfolio/',
+      img: portfolio,
     },
     {
       title: 'Internet of Things: LoRa Radio Performance Analysis',
