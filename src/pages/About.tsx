@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import profile from '../assets/profile.png';
+import profile from '../assets/P.png';
 import EducationTimeline from '../components/EducationTimeline';
 import Skills from '../components/Skills';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';

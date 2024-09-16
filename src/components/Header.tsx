@@ -1,4 +1,4 @@
-import profile from '../assets/profile.png';
+import profile from '../assets/P.png';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Header = () => {

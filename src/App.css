@@ -22,10 +22,12 @@ body {
 }
 
 .section__title {
-  max-width: 60rem;
+  max-width: 80rem;
   margin: 0 auto 0 auto;
   margin-top: 6rem;
   text-align: left;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .section__header {
