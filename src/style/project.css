@@ -19,30 +19,28 @@
 .slider__btn {
   position: absolute;
   top: 50%;
-  z-index: 1;
-
+  z-index: 2;
   height: 5.5rem;
   width: 5.5rem;
-
+  transform: translateY(-50%);
   border: none;
-  background: rgba(255, 255, 255, 0.7);
-
+  background: #d2e0fb;
   color: #333;
-  border-radius: 50%;
-
-  font-size: 3.25rem;
-  font-family: inherit;
+  border-radius: 30%;
+  font-size: 4rem;
+  font-family: 'poppis';
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider__btn--left {
-  left: 6%;
-  transform: translate(-50%, -50%);
+  left: 1%;
 }
 
 .slider__btn--right {
-  right: 6%;
-  transform: translate(50%, -50%);
+  right: 1%;
 }
 
 /* SECTION: PROJECT CONTENT */
@@ -51,50 +49,71 @@
   top: 0;
   width: 100%;
   height: 50rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 1s;
 }
 
-.slide > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .project {
-  width: 65%;
   position: relative;
   background-color: white;
+  border-radius: 10%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .project__name {
+  margin-top: 2rem;
   font-size: 2.25rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+  white-space: nowrap;
 }
 
 .project__description {
   font-size: 1.7rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
   color: #666;
-}
-
-.project__photo {
-  grid-row: 1 / span 2;
-  width: 6.5rem;
-  border-radius: 50%;
 }
 
 .project__date {
   font-size: 1.7rem;
   font-weight: 500;
-  align-self: end;
-  margin: 0;
+  margin-bottom: 1.2rem;
+}
+
+.project__linkNImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .project__link {
   font-size: 1.5rem;
+  color: white;
+  width: fit-content;
+  background-color: #365486;
+  padding: 0.5rem 2.5rem;
+  border-radius: 3rem;
+  text-decoration: none;
+}
+
+.project__img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  overflow: hidden;
+}
+
+.project__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
