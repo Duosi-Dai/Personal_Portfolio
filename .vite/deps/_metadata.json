@@ -1,0 +1,55 @@
+{
+  "hash": "6f8280e7",
+  "configHash": "3ec55cfe",
+  "lockfileHash": "776e2dca",
+  "browserHash": "ae39fd6a",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "416f8c1c",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "b0e1a89c",
+      "needsInterop": true
+    },
+    "react-icons/fa": {
+      "src": "../../node_modules/react-icons/fa/index.mjs",
+      "file": "react-icons_fa.js",
+      "fileHash": "d324709b",
+      "needsInterop": false
+    },
+    "react-dom": {
+      "src": "../../node_modules/react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "45443e67",
+      "needsInterop": true
+    },
+    "react-vertical-timeline-component": {
+      "src": "../../node_modules/react-vertical-timeline-component/dist-es6/index.js",
+      "file": "react-vertical-timeline-component.js",
+      "fileHash": "ba363a9c",
+      "needsInterop": true
+    },
+    "react-icons/io5": {
+      "src": "../../node_modules/react-icons/io5/index.mjs",
+      "file": "react-icons_io5.js",
+      "fileHash": "696f3387",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-55IGENQB": {
+      "file": "chunk-55IGENQB.js"
+    },
+    "chunk-AU5YGS7K": {
+      "file": "chunk-AU5YGS7K.js"
+    },
+    "chunk-45FXRYJS": {
+      "file": "chunk-45FXRYJS.js"
+    }
+  }
+}
