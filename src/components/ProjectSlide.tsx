@@ -8,7 +8,8 @@ interface ProjectSlideProps {
   blogLink?: string;
 }
 
-const ProjectSlide = ({  title,
+const ProjectSlide = ({  
+  title,
   description,
   date,
   videoLink,
@@ -40,7 +41,7 @@ const ProjectSlide = ({  title,
           {blogLink && blogLink !== 'placeholder' && (
             <a href={blogLink} className="project__link" target="_blank" rel="noopener noreferrer">
               Blog
-            </a>
+              </a>
           )}
         </div>
       </div>
