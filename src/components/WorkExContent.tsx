@@ -34,7 +34,7 @@ interface WorkExContentProps {
   jobIndex: number;
 }
 
-export const WorkExContent: React.FC<WorkExContentProps> = ({ jobIndex }) => {
+const WorkExContent = ({ jobIndex }:WorkExContentProps) => {
   const experience = workExperiences[jobIndex];
 
   return (
@@ -58,3 +58,5 @@ export const WorkExContent: React.FC<WorkExContentProps> = ({ jobIndex }) => {
     </div>
   );
 };
+
+export default WorkExContent;

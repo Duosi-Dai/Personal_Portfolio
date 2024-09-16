@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { WorkExContent } from '../components/WorkExContent';
+import WorkExContent from '../components/WorkExContent';
 
 const WorkExs = () => {
   // State to track which tab is active
