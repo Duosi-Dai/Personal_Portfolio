@@ -1,12 +1,11 @@
 {
   "homepage": "http://duosi-dai.github.io/Personal_Portfolio/",
   "name": "personal_portfolio",
-  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "personal_portfolio",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
