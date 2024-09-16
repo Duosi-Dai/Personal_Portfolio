@@ -34,7 +34,7 @@ const Projects = () => {
       description: 'Explores real-time hand-tracking interactions with GPU-based fluid simulation in VR, simulating realistic fluid behaviors using Unity and the Meta XR SDK for VR development.',
       date: 'Aug 2023 - Present',
       videoLink: 'https://www.youtube.com/watch?v=GQpZb-ERgT8',
-      blogLink: 'placeholder', // Placeholder for now
+      blogLink: 'https://interactive-sph-fluidsim-ingpu.webflow.io/'
     },
   ];
 
